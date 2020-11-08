@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    h1 Customer Info
+    form(method = "POST", action = "/users/create")
+        #form-group
+            label Customer Type:
+            input.form-control(name="type", type="text")
+        #form-group
+            label Preference Drink:
+            input.form-control(name="drink", type="text")
+        #form-group
+            label Preference Food:
+            input.form-control(name="food", type="text")
+
+        br
+        input.btn.btn-primary(type = "submit", value = "submit")    
+    
+            
+            
