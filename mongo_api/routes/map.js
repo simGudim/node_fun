@@ -5,6 +5,8 @@ let User = require('../models/user');
 const {body, validationResult} = require('express-validator');
 const flash = require('connect-flash');
 const bodyParser = require('body-parser');
+// const map = require('../public/js/map')
+
 
 
 router.get('/get', EnsureAuth, (req, res) => {

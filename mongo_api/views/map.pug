@@ -11,6 +11,12 @@ block content
     body
         div(id = "mapid")
             script(src = '/js/map.js')
+
+        br
+        br
+        form(method = "POST", action = "/articles/add")
+            label Add Layer:
+            input(name="add_layer", type="file")
             
 
 
