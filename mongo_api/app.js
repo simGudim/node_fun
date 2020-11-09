@@ -79,6 +79,9 @@ app.use('/articles', articles);
 let users = require('./routes/users');
 app.use('/users', users);
 
+let map = require('./routes/map');
+app.use('/map', map);
+
 app.listen(3000, () =>{
     "Serverr started on port 3000"
 });
