@@ -9,6 +9,7 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const config = require('./config/db');
 const passport = require('passport');
+const file_upload = require('express-fileupload');
 
 
 
@@ -39,6 +40,7 @@ app.use(session({
     resave: true,
     saveUnintitialized: true
 }));
+app.use(file_upload());
 
 //Express message middleware
 app.use(require('connect-flash')());

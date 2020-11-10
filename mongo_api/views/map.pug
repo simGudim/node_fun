@@ -14,9 +14,20 @@ block content
 
         br
         br
-        form(method = "POST", action = "/articles/add")
+        form(method = "POST", action = "/map/add", enctype="multipart/form-data")
             label Add Layer:
+            br
             input(name="add_layer", type="file")
+            br
+            label Add Layer Name:
+            br
+            input(name="name", type="text")
+            br
+            br
+            input.btn.btn-primary(type = "submit", value = "submit")
+            
+            
+
             
 
 
